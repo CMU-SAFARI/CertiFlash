@@ -1,0 +1,12 @@
+.git
+**/*.vo
+**/*.vok
+**/*.vos
+**/*.glob
+**/.*.aux
+.lia.cache
+CoqMakefile
+CoqMakefile.conf
+.CoqMakefile.d
+**/*.d
+.DS_Store

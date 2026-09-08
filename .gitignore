@@ -1,0 +1,20 @@
+# Coq / Rocq build products
+*.vo
+*.vok
+*.vos
+*.glob
+*.aux
+.lia.cache
+
+# coq_makefile output
+CoqMakefile
+CoqMakefile.conf
+.CoqMakefile.d
+*.d
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc

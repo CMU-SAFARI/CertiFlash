@@ -1,0 +1,46 @@
+-Q src ""
+
+# CertiFlash: page-granular verification development.
+# This manifest lists every module in the artifact, in build order. The build
+# set is exactly this list: everything under src/ is reachable by Require from
+# these modules, and nothing else is present.
+
+# Shared base
+src/core/Geometry.v
+src/core/Model.v
+src/core/Operational.v
+
+# Invariant framework
+src/Invariants/Invariants.v
+src/Invariants/PagePreservation.v
+src/Invariants/WritePreservation.v
+src/Invariants/GCPreservation.v
+src/Invariants/Preservation.v
+src/Refinement.v
+src/core/Primitives.v
+src/core/TraceRealizable.v
+src/core/BoundaryAgreement.v
+src/Invariants/PrimitivePreconditions.v
+src/Invariants/MicroOpPreconditions.v
+src/core/CustomFTLInterface.v
+src/Specs.v
+src/framework/Composition.v
+src/framework/DischargeTactics.v
+
+# Crash recovery
+src/Invariants/CrashRecovery.v
+src/CrashRefinement.v
+src/core/CrashPoints.v
+
+# Auxiliary lanes
+src/failure_surfaces/FailureSurfaces.v
+src/failure_surfaces/FSReachable.v
+src/validator/InvariantChecker.v
+src/validator/TestHarness.v
+
+# Case studies
+src/dftl/DFTL.v
+src/dftl/MegIS.v
+
+# Deduplication case study (target) -- LAST
+src/dedup/Dedup.v
